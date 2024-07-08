@@ -56,7 +56,6 @@ public class DepartmentController {
     }
 
 
-    //illegal state exception
     @GetMapping("/dept/name/{name}")
     public Department getDepartmentByName(@PathVariable("name") String departmentName){
         return departmentService.getDepartmentByName(departmentName);
